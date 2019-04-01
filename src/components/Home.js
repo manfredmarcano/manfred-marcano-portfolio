@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 
 class Home extends Component {
+
+    
     render () {
         return (
             <div>
-                Slider
-                <br />
-                Skills
+                <h1>Slider</h1>
+                <h1>Skills</h1>
             </div>
         );
     }
