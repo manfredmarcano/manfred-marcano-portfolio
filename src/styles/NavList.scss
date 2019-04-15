@@ -1,0 +1,25 @@
+@import 'shared/_colors.scss';
+
+
+.nav-item-manfred {
+    &.nav-item {
+        .nav-link {
+            color: $color-main;
+            font-weight: 500;
+
+            &:hover {
+                color: #636e72;
+            }
+        }
+    }
+}
+
+/* .nav-item-manfred.nav-item .nav-link {
+    color: #2d3436;
+    color: $color-main;
+    font-weight: 500;
+}
+
+.nav-item-manfred.nav-item .nav-link:hover {
+    color: #636e72;
+} */

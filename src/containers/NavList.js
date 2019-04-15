@@ -4,7 +4,7 @@ import About from './../components/About';
 import Portfolio from './../components/Portfolio';
 import Experience from './../components/Experience';
 import Contact from './../components/Contact';
-import './../styles/NavList.css';
+import './../styles/NavList.scss';
 import {
     Nav,
     NavItem } from 'reactstrap';
@@ -67,14 +67,13 @@ class NavList extends Component {
         const menuItems = this.state.menuItems.en.map((item) => {
             return (
                 <NavItem className="nav-item-manfred">
-                   {/*  <NavLink href={ item.url }>{ item.title }</NavLink> */}
                     <Link to={ item.url } className="nav-link">{ item.title }</Link>
                 </NavItem>
             );
         });
 
-        console.log('menuItems:');
-        console.log(menuItems);
+        /* console.log('menuItems:');
+        console.log(menuItems); */
 
         return (
             <Nav className="ml-auto" navbar>
@@ -82,23 +81,6 @@ class NavList extends Component {
             </Nav>
         );
     }
-
-    /* <NavItem>
-        <NavLink href="/components/">Components</NavLink>
-    </NavItem>
-    <NavItem>
-        <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-    </NavItem> 
-    
-    <div>
-        <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/portfolio">Portfolio</Link></li>
-            <li><Link to="/experience">Experience</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-        </ul>
-    </div> */
 }
 
 export default NavList;
